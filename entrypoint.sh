@@ -7,9 +7,9 @@ function main() {
 
   DOCKERNAME="${INPUT_NAME}"
   echo "${DOCKERNAME}"
-  
+
   docker build -t ${DOCKERNAME} .
-  docker push cr.yandex/crptjipt08rs009ssq7m/${DOCKERNAME}:test
+  docker push cr.yandex/crptjipt08rs009ssq7m/${DOCKERNAME}
 
   docker logout
 }
